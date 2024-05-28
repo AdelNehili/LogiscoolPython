@@ -5,7 +5,8 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 
 class Graph_drawer():
-    def __init__(self,x,y):
+    def __init__(self,name,x,y):
+        self.name = name
         self.my_x = x
         self.my_y = y
 
@@ -75,8 +76,8 @@ for x in range(-15,16):
     given_y.append(x*x)
 
 
-graph_drawer_obj = Graph_drawer(given_x,given_y)
+graph_drawer_obj = Graph_drawer("Chocolatinne",given_x,given_y)
 # #graph_drawer_obj.show_some_csv_data("Student_Income_Expense_Data.csv") #Parfait pour check rapidement la data
 #     # Index(['Id', 'Type', 'Amount', 'From', 'To', 'Date'], dtype='object')
-graph_drawer_obj.display_csv_data('Student_Income_Expense_Data.csv',"Id","Amount")
-# # graph_drawer_obj.apply_linear_regression("Student_Income_Expense_Data.csv")
+#graph_drawer_obj.display_csv_data('Student_Income_Expense_Data.csv',"Id","Amount")
+graph_drawer_obj.apply_linear_regression("src/Student_Income_Expense_Data.csv")
