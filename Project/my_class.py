@@ -79,5 +79,5 @@ for x in range(-15,16):
 graph_drawer_obj = Graph_drawer("Chocolatinne",given_x,given_y)
 # #graph_drawer_obj.show_some_csv_data("Student_Income_Expense_Data.csv") #Parfait pour check rapidement la data
 #     # Index(['Id', 'Type', 'Amount', 'From', 'To', 'Date'], dtype='object')
-#graph_drawer_obj.display_csv_data('Student_Income_Expense_Data.csv',"Id","Amount")
-graph_drawer_obj.apply_linear_regression("src/Student_Income_Expense_Data.csv")
+#graph_drawer_obj.display_csv_data('Project/src/Student_Income_Expense_Data.csv',"Id","Amount")
+graph_drawer_obj.apply_linear_regression("Project/src/Student_Income_Expense_Data.csv")
